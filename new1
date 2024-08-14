@@ -1,0 +1,31 @@
+package pack
+
+
+object obj {
+  
+  def main(arg:Array[String]):Unit={
+    
+    println("========Start==========")
+    
+    val a = List("Praveen", "Arun", "Rakshhanth")
+    
+    val b = a.map(x => "Hi " + x )
+    
+    val c = (    b.filter ( x => x.contains ("hh") )   ).map (x => x + " Super")   
+    
+    val d = b.map( x => x.replace ("Hi", "Super") )
+    
+    println
+    
+    println(b)
+    
+    println(c)
+    
+    println(d)
+    
+    
+    
+     
+  }
+    
+}
